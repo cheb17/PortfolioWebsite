@@ -1,0 +1,116 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*---FOOTER---*/
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+.footer i{
+  color: white;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.footer i:hover{
+  color: grey;
+}
+
+
+
+/*---NAVBAR---*/
+.navbar-container{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+}
+.links {
+  list-style: none;
+}
+.links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+.links li a {
+  transition: all 0.3s ease 0s;
+}
+.links a:link, a:visited {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+.links li a:hover{
+  color: #FE5F55;
+}
+.name{
+  cursor: pointer;
+  margin-right: auto;
+  font-size: 40px;
+  font-weight: bolder;
+  line-height: 80px;
+}
+
+
+/*---CONTENT---*/
+.about-me{
+  width: 60%;
+  margin: 1rem auto;
+  padding: 2rem;
+  text-align: justify;
+  transition: all 0.3s;
+}
+.about-me p{
+  padding-top: 25px;
+  font-size: 30px;
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+  word-spacing: 2px;
+}
+
+.about-me p:first-child::first-letter{
+  color:#FE5F55;
+  font-weight: bold;
+  font-size: 130px;
+  float: left;
+  line-height: 60px;
+  padding-right: 8px;
+  margin-top: -3px;
+}
+
+@media screen and (max-width:600px){
+  .about-me{
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+
+
+em{
+  color: black;
+  flex: 1;
+  line-height: 1.2;
+  text-decoration: none;
+  background-image: linear-gradient(to right, yellow 0, yellow 100%);
+  background-position: 0 1.2em;
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background .5s;
+  cursor: pointer;
+}
+em:hover{
+  background-size: 100% 100%;
+  background-position: 0 -0.1em;
+}
